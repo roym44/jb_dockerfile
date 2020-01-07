@@ -1,0 +1,12 @@
+Run:
+docker run -itd --name dockerlearning -p 8081:80 alpine:latest sh
+docker run -it alpine:latest sh
+
+Build and Run:
+docker build -t spring-music .
+docker run -tid --name my_music spring-music
+
+Publish:
+docker login -u frenzy669 -p cooldevops
+docker tag spring-music frenzy669/docker-demo:roym44
+docker push frenzy669/docker-demo:roym44
